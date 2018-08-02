@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>LOVE YOU</title>
+            <script src="jquery.min.js"></script>
+            <link rel="stylesheet" href="bootstrap.min.css" >
+                <script src="bootstrap.min.js" ></script>
+                
+                <meta name="viewport" content="wi
+                    dth=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row col-md-3"></div>
+            <div class="row col-md-6" >
+                <div class="row question">
+                    <div class="col-md-6 col-xs-12">
+                        <p style="line-height: 50px;font-size: 20px;">“小姐姐，我中意你很久了”</p>
+                        <p style="line-height: 50px;font-size: 20px;">做我对象好不好？</p>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <img src="https://img.gifhome.com/gif/emoji/2018/b89825d69aad4c69b0b6321de0520653.jpg" alt="" style="height: 200px;">
+                            </div>
+                </div>
+                <div class="row question" style="margin-top: 20px;">
+                    <div class="col-md-6 col-xs-6" style="text-align: center;">
+                        <button type="button" class="btn btn-success" style="width: 80%" id="no">好</button>
+                    </div>
+                    <div class="col-md-6 col-xs-6" style="text-align: center;">
+                        <button type="button" class="btn btn-danger" style="width: 80%" id="ok">不好</button>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 hide" id="success">
+                    <img src="http://qq.yh31.com/tp/zjbq/201807061847149624.gif" alt="" style="width: 100%;">
+                        </div>
+            </div>
+            
+            <div class="row col-md-3"></div>
+            
+        </div>
+        <script>
+            var i=1;
+            var ok=false;
+            $(document).ready(function(){
+                              $("#no").click(function(){
+                                             alert("真的吗？你答应了？");
+                                             alert("快说爱我！");
+                                             $(".question").addClass('hide');
+                                             $("#success").removeClass('hide');
+                                             ok=true;
+                                             });
+                              $("#ok").click(function(){
+                                             switch(i){
+                                             case 0:
+                                             alert("月薪过万")
+                                             break;
+                                             case 1:
+                                             alert("有房有车")
+                                             break;
+                                             case 2:
+                                             alert("工资上交");
+                                             break;
+                                             case 3:
+                                             alert("家务全包");
+                                             break;
+                                             case 4:
+                                             alert("房产证写你名");
+                                             break;
+                                             case 5:
+                                             alert("保大");
+                                             break;
+                                             case 6:
+                                             alert("我妈会游泳");
+                                             break;
+                                             case 7:
+                                             alert("不和爹妈一起住")
+                                             break;
+                                             case 8:
+                                             alert("不喝酒不抽烟不吸毒不搞基")
+                                             break;
+                                             case 9:
+                                             alert("跟谁姓都行")
+                                             break;
+                                             case 10:
+                                             alert("生男生女都一样")
+                                             break;
+                                             case 11:
+                                             alert("生不生随你")
+                                             break;
+                                             case 12:
+                                              alert("不能生也无所谓")
+                                             break;
+                                             default:
+                                             alert("嫁给我吧");
+                                             break;
+                                             }
+                                             i++;
+                                     });
+                              });
+            </script>
+    </body>
+</html>
